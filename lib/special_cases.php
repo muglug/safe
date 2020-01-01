@@ -143,6 +143,9 @@ function apcu_fetch($key)
  * @return string|array|string[] preg_replace returns an array if the
  * subject parameter is an array, or a string
  * otherwise.
+ * @psalm-template TSubject
+ * @psalm-param TSubject $subject
+ * @psalm-return TSubject
  *
  * If matches are found, the new subject will
  * be returned, otherwise subject will be
